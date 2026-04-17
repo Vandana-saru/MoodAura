@@ -1,0 +1,38 @@
+body.home {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+  background-size: 800% 800%;
+  animation: gradient 10s ease infinite;
+  color: white;
+}
+
+@keyframes gradient {
+  0% {background-position:0%}
+  50% {background-position:100%}
+  100% {background-position:0%}
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 20px 30px;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  transform: scale(1.1);
+}
